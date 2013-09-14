@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{c47f8d4d-0f82-453a-b547-51b613574d24}" Title="Sci_Time" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Sci_Time author" Description="Timeline of scientific inventions and discoveries" Publisher="Sci_Time" PublisherID="{e670c9fc-a43c-4f95-a19a-482f6f0f7c14}">
+  <App xmlns="" ProductID="{c47f8d4d-0f82-453a-b547-51b613574d24}" Title="Sci-Time" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Sci_Time author" Description="Timeline of scientific inventions and discoveries" Publisher="Sci_Time" PublisherID="{e670c9fc-a43c-4f95-a19a-482f6f0f7c14}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />

@@ -16,3 +16,21 @@ c:\users\utkarsh jaiswal\documents\visual studio 2012\Projects\Sci-Time\Sci-Time
 c:\users\utkarsh jaiswal\documents\visual studio 2012\Projects\Sci-Time\Sci-Time\obj\Debug\Sci-Time.dll
 c:\users\utkarsh jaiswal\documents\visual studio 2012\Projects\Sci-Time\Sci-Time\obj\Debug\Sci-Time.pdb
 c:\users\utkarsh jaiswal\documents\visual studio 2012\Projects\Sci-Time\Sci-Time\obj\Debug\XapCacheFile.xml
+C:\Users\Aniruddha-PC\newapp\Sci_Time_Windows_Phone\Sci-Time\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\Aniruddha-PC\newapp\Sci_Time_Windows_Phone\Sci-Time\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Aniruddha-PC\newapp\Sci_Time_Windows_Phone\Sci-Time\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Aniruddha-PC\newapp\Sci_Time_Windows_Phone\Sci-Time\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Aniruddha-PC\newapp\Sci_Time_Windows_Phone\Sci-Time\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Aniruddha-PC\newapp\Sci_Time_Windows_Phone\Sci-Time\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\Aniruddha-PC\newapp\Sci_Time_Windows_Phone\Sci-Time\Bin\Debug\Sci-Time.dll
+C:\Users\Aniruddha-PC\newapp\Sci_Time_Windows_Phone\Sci-Time\Bin\Debug\Sci-Time.pdb
+C:\Users\Aniruddha-PC\newapp\Sci_Time_Windows_Phone\Sci-Time\Bin\Debug\AppManifest.xaml
+C:\Users\Aniruddha-PC\newapp\Sci_Time_Windows_Phone\Sci-Time\Bin\Debug\Sci_Time_Debug_AnyCPU.xap
+C:\Users\Aniruddha-PC\newapp\Sci_Time_Windows_Phone\Sci-Time\obj\Debug\App.g.cs
+C:\Users\Aniruddha-PC\newapp\Sci_Time_Windows_Phone\Sci-Time\obj\Debug\MainPage.g.cs
+C:\Users\Aniruddha-PC\newapp\Sci_Time_Windows_Phone\Sci-Time\obj\Debug\Sci-Time.g.resources
+C:\Users\Aniruddha-PC\newapp\Sci_Time_Windows_Phone\Sci-Time\obj\Debug\Sci_Time.Resources.AppResources.resources
+C:\Users\Aniruddha-PC\newapp\Sci_Time_Windows_Phone\Sci-Time\obj\Debug\Sci-Time.csproj.GenerateResource.Cache
+C:\Users\Aniruddha-PC\newapp\Sci_Time_Windows_Phone\Sci-Time\obj\Debug\Sci-Time.dll
+C:\Users\Aniruddha-PC\newapp\Sci_Time_Windows_Phone\Sci-Time\obj\Debug\Sci-Time.pdb
+C:\Users\Aniruddha-PC\newapp\Sci_Time_Windows_Phone\Sci-Time\obj\Debug\XapCacheFile.xml
