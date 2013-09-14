@@ -37,13 +37,13 @@
          -->
 
          <!--Panorama control-->
-        <phone:Panorama Title="my application">
+        <phone:Panorama Title="Sci-Time">
             <phone:Panorama.Background>
                 <ImageBrush ImageSource="/Sci_Time;component/Assets/PanoramaBackground.png"/>
             </phone:Panorama.Background>
 
             <!--Panorama item one-->
-            <phone:PanoramaItem Header="first item">
+            <phone:PanoramaItem Header="Timeline">
                 <!--Single line list with text wrapping-->
                 <phone:LongListSelector Margin="0,0,-22,0" ItemsSource="{Binding Items}">
                     <phone:LongListSelector.ItemTemplate>
@@ -57,7 +57,7 @@
             </phone:PanoramaItem>
 
             <!--Panorama item two-->
-            <phone:PanoramaItem>
+            <phone:PanoramaItem Header="recents">
                 <!--Double line list with image placeholder and text wrapping using a floating header that scrolls with the content-->
                 <phone:LongListSelector Margin="0,-38,-22,2" ItemsSource="{Binding Items}">
                     <phone:LongListSelector.ListHeaderTemplate>
