@@ -12,6 +12,8 @@ C:\Users\Utkarsh Jaiswal\Documents\GitHub\Sci_Time_Windows_Phone\Sci-Time\Bin\x8
 C:\Users\Utkarsh Jaiswal\Documents\GitHub\Sci_Time_Windows_Phone\Sci-Time\Bin\x86\Debug\Sqlite.pdb
 C:\Users\Utkarsh Jaiswal\Documents\GitHub\Sci_Time_Windows_Phone\Sci-Time\obj\x86\Debug\Sci-Time.csprojResolveAssemblyReference.cache
 C:\Users\Utkarsh Jaiswal\Documents\GitHub\Sci_Time_Windows_Phone\Sci-Time\obj\x86\Debug\App.g.cs
+C:\Users\Utkarsh Jaiswal\Documents\GitHub\Sci_Time_Windows_Phone\Sci-Time\obj\x86\Debug\Article.g.cs
+C:\Users\Utkarsh Jaiswal\Documents\GitHub\Sci_Time_Windows_Phone\Sci-Time\obj\x86\Debug\List.g.cs
 C:\Users\Utkarsh Jaiswal\Documents\GitHub\Sci_Time_Windows_Phone\Sci-Time\obj\x86\Debug\MainPage.g.cs
 C:\Users\Utkarsh Jaiswal\Documents\GitHub\Sci_Time_Windows_Phone\Sci-Time\obj\x86\Debug\Sci-Time.g.resources
 C:\Users\Utkarsh Jaiswal\Documents\GitHub\Sci_Time_Windows_Phone\Sci-Time\obj\x86\Debug\Sci_Time.Resources.AppResources.resources

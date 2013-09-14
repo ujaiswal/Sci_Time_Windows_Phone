@@ -29,5 +29,13 @@ namespace Sci_Time
                 App.ViewModel.LoadData();
             }
         }
+
+        private void YearRange_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (YearRange.SelectedItem == null) return;
+
+            NavigationService.Navigate(new Uri("/List.xaml?selectedItem=" + (YearRange.SelectedItem as ViewModels.ItemViewModel).LineOne, UriKind.Relative));
+            YearRange.SelectedItem = null;
+        }
     }
 }

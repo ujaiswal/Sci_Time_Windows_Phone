@@ -10,13 +10,14 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Sci_Time.Resources;
 using Sci_Time.ViewModels;
+using Sci_Time.Model;
 
 namespace Sci_Time
 {
     public partial class App : Application
     {
         private static MainViewModel viewModel = null;
-
+        private static Database db = null;
         /// <summary>
         /// A static ViewModel used by the views to bind against.
         /// </summary>
@@ -27,9 +28,24 @@ namespace Sci_Time
             {
                 // Delay creation of the view model until necessary
                 if (viewModel == null)
-                    viewModel = new MainViewModel();
-
+                {
+                    viewModel = new MainViewModel(db);
+                }
                 return viewModel;
+            }
+        }
+
+        private static ListViewModel listModel = null;
+        public static ListViewModel ListModel
+        {
+            get
+            {
+                // Delay creation of the view model until necessary
+                if (listModel == null)
+                {
+                    listModel = new ListViewModel(db);
+                }
+                return listModel;
             }
         }
 
@@ -82,6 +98,9 @@ namespace Sci_Time
         // This code will not execute when the application is reactivated
         private void Application_Launching(object sender, LaunchingEventArgs e)
         {
+            if (db == null) {
+                db = new Database();
+            }
         }
 
         // Code to execute when the application is activated (brought to foreground)
@@ -106,6 +125,10 @@ namespace Sci_Time
         // This code will not execute when the application is deactivated
         private void Application_Closing(object sender, ClosingEventArgs e)
         {
+            if (db != null)
+            {
+                db.closeDatabase();
+            }
         }
 
         // Code to execute if a navigation fails

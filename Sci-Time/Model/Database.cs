@@ -13,20 +13,27 @@ using System.IO;
 
 namespace Sci_Time.Model
 {
-    class Database
+    public class Database
     {
-        public static string DB_PATH = Path.Combine(Path.Combine(ApplicationData.Current.LocalFolder.Path, "Assets/Database/sci_time.db"));
+        public static string DB_PATH = "sci_time.db";
         private SQLiteConnection dbconn;
 
         public Database() {
-            if (dbconn != null) {
+            if (dbconn == null) {
                 dbconn = new SQLiteConnection(DB_PATH);
             }
         }
 
-        public IEnumerable<YearRanges> QueryYearRanges()
+        public void closeDatabase() {
+            if (dbconn != null)
+            {
+                dbconn.Close();
+            }
+        }
+
+        public IEnumerable<YearRange> QueryYearRanges()
         {
-            return dbconn.Query<YearRanges>("select _id, Name from list");
+            return dbconn.Query<YearRange>("select _id, Name from list");  
         }
 
         public IEnumerable<Discoveries> QueryYearRanges(string yearRange)
@@ -41,7 +48,7 @@ namespace Sci_Time.Model
 
     }
 
-    public sealed class YearRanges
+    public sealed class YearRange
     {
 
         [PrimaryKey, AutoIncrement]
