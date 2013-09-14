@@ -1,4 +1,7 @@
-Sci-Time
+Sci_Time_Windows_Phone
+======================
+Windows Phone 8 App - Timeline of scientific inventions and discoveries  
+
 Description
 -----------
 The project aims at developing educational applications specifically for Aakash Tablet.  
