@@ -33,7 +33,7 @@ namespace Sci_Time
         {
          if( Discoveries.SelectedItem == null) return;
 
-            NavigationService.Navigate(new Uri("/Article.xaml?selectedItem=" + (Discoveries.SelectedItem as ViewModels.ItemViewModel).LineOne, UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Article.xaml?title=" + (Discoveries.SelectedItem as ViewModels.ItemViewModel).LineOne + "&year=" + this.Year.Text, UriKind.Relative));
             Discoveries.SelectedItem = null;
         }
     }

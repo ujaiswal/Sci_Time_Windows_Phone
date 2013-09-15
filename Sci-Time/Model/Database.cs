@@ -43,7 +43,7 @@ namespace Sci_Time.Model
 
         public IEnumerable<Article> QueryYearRanges(string yearRange, string title)
         {
-            return dbconn.Query<Article>("select _id, Title, Image, Discovery, Year, Discoverer, Tags from " + "[" + yearRange + "]");
+            return dbconn.Query<Article>("select _id, Title, Image, Discovery, Year, Discoverer, Tags from " + "[" + yearRange + "]" + " where Title =?", title);
         }
 
     }
@@ -63,7 +63,7 @@ namespace Sci_Time.Model
         public string Title { get; set; }
     }
 
-    public sealed class Article
+    public class Article
     {
         [PrimaryKey, AutoIncrement]
         public int _id { get; set; }

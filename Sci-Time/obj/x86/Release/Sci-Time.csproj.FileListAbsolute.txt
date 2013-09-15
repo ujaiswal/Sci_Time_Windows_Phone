@@ -1,0 +1,8 @@
+C:\Users\Utkarsh Jaiswal\Documents\GitHub\Sci_Time_Windows_Phone\Sci-Time\obj\x86\Release\Sci-Time.csprojResolveAssemblyReference.cache
+C:\Users\Utkarsh Jaiswal\Documents\GitHub\Sci_Time_Windows_Phone\Sci-Time\obj\x86\Release\App.g.cs
+C:\Users\Utkarsh Jaiswal\Documents\GitHub\Sci_Time_Windows_Phone\Sci-Time\obj\x86\Release\Article.g.cs
+C:\Users\Utkarsh Jaiswal\Documents\GitHub\Sci_Time_Windows_Phone\Sci-Time\obj\x86\Release\List.g.cs
+C:\Users\Utkarsh Jaiswal\Documents\GitHub\Sci_Time_Windows_Phone\Sci-Time\obj\x86\Release\MainPage.g.cs
+C:\Users\Utkarsh Jaiswal\Documents\GitHub\Sci_Time_Windows_Phone\Sci-Time\obj\x86\Release\Sci-Time.g.resources
+C:\Users\Utkarsh Jaiswal\Documents\GitHub\Sci_Time_Windows_Phone\Sci-Time\obj\x86\Release\Sci_Time.Resources.AppResources.resources
+C:\Users\Utkarsh Jaiswal\Documents\GitHub\Sci_Time_Windows_Phone\Sci-Time\obj\x86\Release\Sci-Time.csproj.GenerateResource.Cache

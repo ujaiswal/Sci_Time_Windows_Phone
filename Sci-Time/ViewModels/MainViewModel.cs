@@ -4,6 +4,7 @@ using System.ComponentModel;
 using Sci_Time.Resources;
 using System.Collections.Generic;
 using Sci_Time.Model;
+using System.IO.IsolatedStorage;
 
 namespace Sci_Time.ViewModels
 {
@@ -11,11 +12,50 @@ namespace Sci_Time.ViewModels
     {
         private Database dbase;
         private IEnumerable<YearRange> yeardata;
+        public static ObservableCollection<ItemViewModel> Recents { get; set; }
+
+        public void GetRecents()
+        {
+            if (IsolatedStorageSettings.ApplicationSettings.Count > 0)
+            {
+                GetSavedRecents();
+            }
+        }
+
+        public void GetSavedRecents() {
+            Recents.Clear();
+            ObservableCollection<ItemViewModel> a = new ObservableCollection<ItemViewModel>();
+            foreach (Object o in IsolatedStorageSettings.ApplicationSettings.Values)
+            {
+                a.Add((ItemViewModel)o);
+            }
+
+            Recents = a;
+        }
+
+        public void SaveRecents()
+        {
+            IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
+
+            foreach (ItemViewModel a in Recents)
+            {
+                if (settings.Contains(a.LineOne))
+                {
+                    settings[a.LineOne] = a;
+                }
+                else
+                {
+                    settings.Add(a.LineOne, a.GetCopy());
+                }
+            }
+
+            settings.Save();
+        }
 
         public MainViewModel(Database db)
         {
             this.Items = new ObservableCollection<ItemViewModel>();
-            this.Items2 = new ObservableCollection<ItemViewModel>();
+            Recents = new ObservableCollection<ItemViewModel>();
             this.dbase = db;
             yeardata = dbase.QueryYearRanges();
         }
@@ -24,7 +64,6 @@ namespace Sci_Time.ViewModels
         /// A collection for ItemViewModel objects.
         /// </summary>
         public ObservableCollection<ItemViewModel> Items { get; private set; } // For timeline
-        public ObservableCollection<ItemViewModel> Items2 { get; private set; } // For recents.
 
         private string _sampleProperty = "Sample Runtime Property Value";
         /// <summary>
@@ -73,7 +112,6 @@ namespace Sci_Time.ViewModels
             foreach (var range in yeardata) {
                 this.Items.Add(new ItemViewModel() { LineOne = range.Name.ToString(), LineTwo = range._id.ToString() });
             }
-            this.Items2.Clear();
             this.IsDataLoaded = true;
         }
 

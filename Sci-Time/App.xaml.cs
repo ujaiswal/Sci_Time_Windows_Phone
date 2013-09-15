@@ -48,6 +48,19 @@ namespace Sci_Time
                 return listModel;
             }
         }
+        private static ArticleModel articleModel = null;
+        public static ArticleModel Article_model
+        {
+            get
+            {
+                // Delay creation of the view model until necessary
+                if (articleModel == null)
+                {
+                    articleModel = new ArticleModel(db);
+                }
+                return articleModel;
+            }
+        }
 
         /// <summary>
         /// Provides easy access to the root frame of the Phone Application.
@@ -76,7 +89,7 @@ namespace Sci_Time
             if (Debugger.IsAttached)
             {
                 // Display the current frame rate counters.
-                Application.Current.Host.Settings.EnableFrameRateCounter = true;
+               // Application.Current.Host.Settings.EnableFrameRateCounter = true;
 
                 // Show the areas of the app that are being redrawn in each frame.
                 //Application.Current.Host.Settings.EnableRedrawRegions = true;
@@ -129,6 +142,7 @@ namespace Sci_Time
             {
                 db.closeDatabase();
             }
+            App.ViewModel.SaveRecents();
         }
 
         // Code to execute if a navigation fails
@@ -164,7 +178,7 @@ namespace Sci_Time
 
             // Create the frame but don't set it as RootVisual yet; this allows the splash
             // screen to remain active until the application is ready to render.
-            RootFrame = new PhoneApplicationFrame();
+            RootFrame = new TransitionFrame();
             RootFrame.Navigated += CompleteInitializePhoneApplication;
 
             // Handle navigation failures

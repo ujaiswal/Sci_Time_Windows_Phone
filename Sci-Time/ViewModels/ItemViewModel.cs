@@ -75,6 +75,12 @@ namespace Sci_Time.ViewModels
             }
         }
 
+        public ItemViewModel GetCopy()
+        {
+            ItemViewModel copy = (ItemViewModel)this.MemberwiseClone();
+            return copy;
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged(String propertyName)
         {

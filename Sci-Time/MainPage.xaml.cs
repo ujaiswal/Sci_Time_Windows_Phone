@@ -28,6 +28,8 @@ namespace Sci_Time
             {
                 App.ViewModel.LoadData();
             }
+
+            App.ViewModel.GetRecents();
         }
 
         private void YearRange_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -36,6 +38,15 @@ namespace Sci_Time
 
             NavigationService.Navigate(new Uri("/List.xaml?selectedItem=" + (YearRange.SelectedItem as ViewModels.ItemViewModel).LineOne, UriKind.Relative));
             YearRange.SelectedItem = null;
+        }
+
+        private void recents_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (recents.SelectedItem == null) return;
+
+            NavigationService.Navigate(new Uri("/Article.xaml?title=" + (recents.SelectedItem as ViewModels.ItemViewModel).LineOne + "&year=" + (recents.SelectedItem as ViewModels.ItemViewModel).LineTwo, UriKind.Relative));
+            recents.SelectedItem = null;
+
         }
     }
 }
