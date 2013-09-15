@@ -11,6 +11,7 @@ using Microsoft.Phone.Shell;
 using System.IO;
 using System.IO.IsolatedStorage;
 using Sci_Time.ViewModels;
+using Microsoft.Phone.Tasks;
 
 namespace Sci_Time
 {
@@ -66,5 +67,18 @@ namespace Sci_Time
             returnImage.SetSource(ms);
             return returnImage;
         }
+
+        private void link_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (link.SelectedItem == null) return;
+
+            var task = new WebBrowserTask()
+            {
+                URL = "http://en.wikipedia.org/wiki/Special:Search/" + (link.SelectedItem as ItemViewModel).LineOne
+            };
+
+            task.Show();
+        }
+
     }
 }

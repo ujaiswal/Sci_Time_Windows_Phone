@@ -63,7 +63,7 @@
         		<Border Margin="10,396,10,10">
         			<Grid>
         				<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Text="Related links:"/>
-        				<phone:LongListSelector HorizontalAlignment="Left" ItemsSource="{Binding Items}" Height="217" Margin="0,37,0,0" VerticalAlignment="Top" Width="436">
+        				<phone:LongListSelector x:Name="link" SelectionChanged="link_SelectionChanged" HorizontalAlignment="Left" ItemsSource="{Binding Items}" Height="217" Margin="0,37,0,0" VerticalAlignment="Top" Width="436">
         					<phone:LongListSelector.ItemTemplate>
         						<DataTemplate>
         							<StackPanel>
